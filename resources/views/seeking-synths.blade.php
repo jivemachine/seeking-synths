@@ -79,63 +79,63 @@
 <body>
 
     <!-- Gradient Overlay -->
-    <div class="gradient-overlay">
-        <!-- Layer 5: Credits -->
-        <div class="credits">
-            <p style="font-size: 16.51px; font-weight: 700; line-height: 20px; margin: 0;">
-                SEEKING SYNTHS
-            </p>
-            <p style="font-size: 16.51px; font-weight: 400; line-height: 20px; margin-top: 20px;">
-                Host: Jesse Beaman<br>
-                Director: Sam Mims<br>
-                Editor & Director of Photography: Lucas Fowler
-            </p>
-        </div>
+    <div class="gradient-overlay"></div>
+    <!-- Layer 5: Credits -->
+    <div class="credits">
+        <p style="font-size: 16.51px; font-weight: 700; line-height: 20px; margin: 0;">
+            SEEKING SYNTHS
+        </p>
+        <p style="font-size: 16.51px; font-weight: 400; line-height: 20px; margin-top: 20px;">
+            Host: Jesse Beaman<br>
+            Director: Sam Mims<br>
+            Editor & Director of Photography: Lucas Fowler
+        </p>
+    </div>
 
-        <!-- Layer 1: Logo -->
-        <div class="logo">
-            <img src="{{ asset('images/logo.png') }}" alt="Seeking Synths Logo" style="width: 100%; height: 100%;">
-        </div>
+    <!-- Layer 1: Logo -->
+    <div class="logo">
+        <img src="{{ asset('images/logo.png') }}" alt="Seeking Synths Logo" style="width: 100%; height: 100%;">
+    </div>
 
-        <!-- Layer 2: Main Content Text -->
-        <div class="main-content">
-            <p
-                style="
+    <!-- Layer 2: Main Content Text -->
+    <div class="main-content">
+        <p
+            style="
             font-size: 50px;
             font-weight: 400;
             line-height: 57.5px;
             margin: 0;">
-                <span style="font-weight:700">Seeking Synths</span> is a captivating video series featuring 30-minute
-                episodes in the spirit of Anthony
-                Bourdain, where the host visits renowned musicians to explore their collections of vintage synthesizers
-                and uncover how these iconic instruments have shaped their music.
-            </p>
-            <p
-                style="
+            <span style="font-weight:700">Seeking Synths</span> is a captivating video series featuring 30-minute
+            episodes in the spirit of Anthony
+            Bourdain, where the host visits renowned musicians to explore their collections of vintage synthesizers
+            and uncover how these iconic instruments have shaped their music.
+        </p>
+        <p
+            style="
             font-size: 30px;
             font-weight: 400;
             line-height: 34.5px;
             margin-top: 60px;">
-                The show delves into the guests' passion for vintage synthesizers and the distinctive sounds they
-                create, revealing the stories behind the music, the musicians, and these rare instruments. Musicians
-                will marvel at the impressive collections, while non-musicians will enjoy uncovering the artists behind
-                some of their favorite tracks.
-            </p>
-        </div>
+            The show delves into the guests' passion for vintage synthesizers and the distinctive sounds they
+            create, revealing the stories behind the music, the musicians, and these rare instruments. Musicians
+            will marvel at the impressive collections, while non-musicians will enjoy uncovering the artists behind
+            some of their favorite tracks.
+        </p>
+    </div>
 
-        <!-- Layer 3: "Get in Touch!" Text -->
-        <div class="get-in-touch">
-            <a href=""
-                style="
+    <!-- Layer 3: "Get in Touch!" Text -->
+    <div class="get-in-touch">
+        <a href="mailto:your-email@example.com"
+            style="
                 font-size: 50px;
                 font-weight: 700;
                 line-height: 57.5px;
                 text-decoration: underline;
             ">
-                Get in touch!
-            </a>
-        </div>
+            Get in touch!
+        </a>
     </div>
+
 </body>
 
 </html>

@@ -6,6 +6,12 @@
     <title>Seeking Synths</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             /* Desktop Styles */
             width: 1440px;
@@ -116,16 +122,19 @@
             body {
                 position: relative;
                 width: 100%;
-                height: auto;
+                min-height: 50vh;
                 overflow-x: hidden;
+                margin: 0;
+                padding: 0;
                 background-image: url('{{ asset('images/background.png') }}');
                 background-size: cover;
                 background-position: center;
             }
 
+
             .gradient-overlay {
                 width: 100%;
-                height: 100%;
+                height: 100vh;
             }
 
             .credits {
@@ -181,16 +190,16 @@
             .get-in-touch {
                 position: relative;
                 width: 90%;
-                height: auto;
                 top: 80px;
                 left: 0;
                 margin: 20px auto;
                 text-align: center;
             }
 
-            .get-in-touch a {
+            .mail-link {
                 font-size: 20px;
                 line-height: 1.2;
+                top: -5px;
             }
         }
     </style>
@@ -235,7 +244,7 @@
 
     <!-- Layer 3: "Get in Touch!" Text -->
     <div class="get-in-touch">
-        <a class="mail-link" href="mailto:your-email@example.com">
+        <a class="mail-link" href="mailto:contact@seekingsynths.com">
             Get in touch!
         </a>
     </div>

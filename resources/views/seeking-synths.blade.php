@@ -2,11 +2,33 @@
 <html lang="en">
 
 <head>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians">
+    <meta property="og:description"
+        content="Join host Jesse Beaman as he explores musicians' collections of vintage synthesizers.">
+    <meta property="og:image" content="https://www.seekingsynths.com/images/logo.png">
+    <meta property="og:url" content="https://www.seekingsynths.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians">
+    <meta name="twitter:description"
+        content="Join host Jesse Beaman as he explores musicians' collections of vintage synthesizers.">
+    <meta name="twitter:image" content="https://www.seekingsynths.com/images/logo.png">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seeking Synths</title>
+    <title>Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians</title>
+    <meta name="description"
+        content="Seeking Synths is a captivating video series where the host explores musicians' collections of vintage synthesizers and how they've shaped their music.">
+    <meta name="keywords" content="Seeking Synths, vintage synthesizers, music, musicians, video series">
+    <link rel="canonical" href="https://www.seekingsynths.com">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Seeking Synths">
     <style>
-        /* General Styles */
+        /* General Style */
         body {
             margin: 0;
             padding: 0;
@@ -36,7 +58,7 @@
             pointer-events: none;
         }
 
-        /* Container */
+        /* Container Holding Everything */
         .container {
             position: relative;
             z-index: 1;
@@ -48,7 +70,7 @@
             min-height: 100vh;
         }
 
-        /* Left and Right Side */
+        /* Left and Right Side Containers */
         .left-side,
         .right-side {
             width: 100%;
@@ -191,29 +213,29 @@
     <div class="gradient-overlay"></div>
 
     <!-- Main Content Container -->
-    <div class="container">
+    <main class="container">
         <!-- Left Side: Credits and Logo -->
-        <div class="left-side">
+        <aside class="left-side">
             <!-- Credits -->
-            <div class="credits">
-                <p class="credits-title">SEEKING SYNTHS</p>
+            <section class="credits">
+                <h1 class="credits-title">SEEKING SYNTHS</h1>
                 <p class="credits-content">
                     Host: Jesse Beaman<br>
                     Director: Sam Mims<br>
                     Editor & Director of Photography: Lucas Fowler
                 </p>
-            </div>
+            </section>
 
             <!-- Logo -->
             <div class="logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Seeking Synths Logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Seeking Synths Logo - A vintage synthesizer series">
             </div>
-        </div>
+        </aside>
 
         <!-- Right Side: Main Text and Get in Touch -->
-        <div class="right-side">
+        <section class="right-side">
             <!-- Main Text -->
-            <div class="main-content">
+            <article class="main-content">
                 <p class="main-text">
                     <strong>Seeking Synths</strong> is a captivating video series featuring 30-minute episodes in the
                     spirit of Anthony
@@ -228,14 +250,43 @@
                     behind
                     some of their favorite tracks.
                 </p>
-            </div>
+            </article>
 
             <!-- Get in Touch -->
             <div class="get-in-touch">
                 <a href="mailto:contact@seekingsynths.com">Get in touch!</a>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TVSeries",
+      "name": "Seeking Synths",
+      "description": "A video series where host Jesse Beaman explores renowned musicians' collections of vintage synthesizers.",
+      "genre": "Documentary, Music",
+      "creator": {
+        "@type": "Person",
+        "name": "Sam Mims"
+      },
+      "actor": {
+        "@type": "Person",
+        "name": "Jesse Beaman"
+      },
+      "director": {
+        "@type": "Person",
+        "name": "Sam Mims"
+      },
+      "image": "https://www.seekingsynths.com/images/logo.png",
+      "url": "https://www.seekingsynths.com",
+      "sameAs": [
+        "https://www.facebook.com/seekingsynths",
+        "https://www.instagram.com/seekingsynths",
+        "https://www.twitter.com/seekingsynths"
+      ]
+    }
+    </script>
+
 
 </html>

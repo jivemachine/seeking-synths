@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seeking Synths</title>
+    <title>test Page</title>
     <style>
         /* General Styles */
         body {
@@ -60,14 +60,17 @@
         }
 
         .credits-title {
-            font-size: 2em;
+            font-size: 1em;
             font-weight: 700;
             margin: 0;
+            text-align: center;
         }
 
         .credits-content {
             font-size: 1em;
             margin-top: 1em;
+            font-weight: 400;
+            text-align: center;
         }
 
         /* Logo */
@@ -86,9 +89,18 @@
         }
 
         .main-text {
-            font-size: 1.2em;
-            line-height: 1.5em;
+            font-size: 2em;
+            line-height: 1em;
             margin-bottom: 1em;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        .main-text-small {
+            font-size: 1.5em;
+            line-height: 1em;
+            margin-top: 0;
+            padding: 0;
         }
 
         /* Get in Touch */
@@ -98,6 +110,10 @@
             text-decoration: underline;
         }
 
+        .get-in-touch {
+            text-align: center;
+        }
+
         /* Responsive Layout */
         @media screen and (min-width: 768px) {
             .container {
@@ -105,9 +121,12 @@
                 align-items: flex-start;
             }
 
-            .left-side,
-            .right-side {
+            .left-side {
                 width: 50%;
+            }
+
+            .right-side {
+                width: 75%;
             }
 
             .left-side {
@@ -115,11 +134,25 @@
             }
 
             .credits-title {
-                font-size: 2.5em;
+                font-size: 1em;
+                text-align: left;
+            }
+
+            .credits-content {
+                text-align: left;
             }
 
             .main-text {
+                font-size: 2em;
+                line-height: 1em;
+            }
+
+            .main-text-small {
                 font-size: 1.5em;
+            }
+
+            .get-in-touch {
+                text-align: left;
             }
 
             .get-in-touch a {
@@ -128,16 +161,26 @@
         }
 
         @media screen and (min-width: 1024px) {
-            .credits-title {
-                font-size: 3em;
+            .main-text {
+                font-size: 3.5em;
+                line-height: 1.2em;
             }
 
-            .main-text {
-                font-size: 2em;
+            .main-text-small {
+                font-size: 1.75em;
+                line-height: 1.2em;
             }
 
             .get-in-touch a {
-                font-size: 2.5em;
+                font-size: 3.5em;
+            }
+
+            .logo {
+                background: blue;
+            }
+
+            .logo img {
+                float: right;
             }
         }
     </style>
@@ -178,7 +221,7 @@
                     synthesizers
                     and uncover how these iconic instruments have shaped their music.
                 </p>
-                <p class="main-text">
+                <p class="main-text-small">
                     The show delves into the guests' passion for vintage synthesizers and the distinctive sounds they
                     create, revealing the stories behind the music, the musicians, and these rare instruments. Musicians
                     will marvel at the impressive collections, while non-musicians will enjoy uncovering the artists
@@ -189,7 +232,7 @@
 
             <!-- Get in Touch -->
             <div class="get-in-touch">
-                <a href="mailto:your-email@example.com">Get in touch!</a>
+                <a href="mailto:contact@seekingsynths.com">Get in touch!</a>
             </div>
         </div>
     </div>

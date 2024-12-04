@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians</title>
+    <meta name="description"
+        content="Seeking Synths is a captivating video series where the host explores musicians' collections of vintage synthesizers and how they've shaped their music.">
+    <meta name="keywords"
+        content="Seeking Synths, vintage synthesizers, music, musicians, video series, Syntaur, synthesizers">
+    <meta name="author" content="Seeking Synths">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.seekingsynths.com">
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians">
     <meta property="og:description"
@@ -10,7 +21,7 @@
     <meta property="og:url" content="https://www.seekingsynths.com">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Meta Tags -->
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians">
     <meta name="twitter:description"
@@ -18,15 +29,37 @@
     <meta name="twitter:image" content="https://www.seekingsynths.com/images/logo.png">
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seeking Synths | Exploring Vintage Synthesizers with Renowned Musicians</title>
-    <meta name="description"
-        content="Seeking Synths is a captivating video series where the host explores musicians' collections of vintage synthesizers and how they've shaped their music.">
-    <meta name="keywords" content="Seeking Synths, vintage synthesizers, music, musicians, video series">
-    <link rel="canonical" href="https://www.seekingsynths.com">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Seeking Synths">
+    <!-- Structured Data Markup -->
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "TVSeries",
+          "name": "Seeking Synths",
+          "description": "A video series where host Jesse Beaman explores renowned musicians' collections of vintage synthesizers.",
+          "genre": "Documentary, Music",
+          "creator": {
+            "@type": "Person",
+            "name": "Sam Mims"
+          },
+          "actor": {
+            "@type": "Person",
+            "name": "Jesse Beaman"
+          },
+          "director": {
+            "@type": "Person",
+            "name": "Sam Mims"
+          },
+          "image": "https://www.seekingsynths.com/path-to-image.jpg",
+          "url": "https://www.seekingsynths.com",
+          "sameAs": [
+            "https://www.facebook.com/seekingsynths",
+            "https://www.instagram.com/seekingsynths",
+            "https://www.twitter.com/seekingsynths"
+          ]
+        }
+    </script>
+
+    <!-- CSS Styling     -->
     <style>
         /* General Style */
         body {
@@ -259,34 +292,5 @@
         </section>
     </main>
 </body>
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TVSeries",
-      "name": "Seeking Synths",
-      "description": "A video series where host Jesse Beaman explores renowned musicians' collections of vintage synthesizers.",
-      "genre": "Documentary, Music",
-      "creator": {
-        "@type": "Person",
-        "name": "Sam Mims"
-      },
-      "actor": {
-        "@type": "Person",
-        "name": "Jesse Beaman"
-      },
-      "director": {
-        "@type": "Person",
-        "name": "Sam Mims"
-      },
-      "image": "https://www.seekingsynths.com/images/logo.png",
-      "url": "https://www.seekingsynths.com",
-      "sameAs": [
-        "https://www.facebook.com/seekingsynths",
-        "https://www.instagram.com/seekingsynths",
-        "https://www.twitter.com/seekingsynths"
-      ]
-    }
-    </script>
-
 
 </html>

@@ -3,25 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Seeking Synths</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeking Synths</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* General Styles */
         body {
-            /* Desktop Styles */
-            width: 1440px;
-            height: 1491px;
             margin: 0;
             padding: 0;
             background-image: url('{{ asset('images/background.png') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            position: relative;
+            min-height: 100vh;
+            font-family: Helvetica, Arial, sans-serif;
+            color: #FFFFFF;
+        }
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
         }
 
         /* Gradient Overlay */
@@ -29,226 +30,212 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 1440px;
-            height: 1491px;
+            width: 100%;
+            height: 100%;
             background: linear-gradient(90deg, rgba(196, 196, 196, 0) 24%, #000000 75%);
             pointer-events: none;
         }
 
-        /* General Styles */
-        p,
-        a {
-            font-family: Helvetica;
-            letter-spacing: 0.04em;
-            text-decoration: none;
-            color: #FFFFFF;
+        /* Container */
+        .container {
+            position: relative;
+            z-index: 1;
+            /* Ensure content is above the overlay */
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            box-sizing: border-box;
+            min-height: 100vh;
         }
 
-        /* Positioning Containers for Desktop */
+        /* Left and Right Side */
+        .left-side,
+        .right-side {
+            width: 100%;
+        }
+
+        /* Credits */
         .credits {
-            position: absolute;
-            top: 60px;
-            left: 41px;
-            width: 389px;
-            height: 100px;
+            margin-bottom: 2em;
         }
 
         .credits-title {
-            font-size: 16.51px;
+            font-size: 1em;
             font-weight: 700;
-            line-height: 20px;
             margin: 0;
+            text-align: center;
         }
 
         .credits-content {
-            font-size: 16.51px;
+            font-size: 1em;
+            margin-top: 1em;
             font-weight: 400;
-            line-height: 20px;
-            margin-top: 20px;
+            text-align: center;
         }
 
+        /* Logo */
         .logo {
-            position: absolute;
-            top: 223px;
-            left: 237px;
-            width: 305px;
-            height: 305px;
+            margin-bottom: 2em;
         }
 
         .logo img {
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
+            height: auto;
         }
 
+        /* Main Content */
         .main-content {
-            position: absolute;
-            top: 59px;
-            left: 636px;
-            width: 764px;
-            height: 912px;
+            margin-bottom: 2em;
         }
 
-        .main-content-large-text {
-            font-size: 50px;
-            font-weight: 400;
-            line-height: 57.5px;
-            margin: 0;
+        .main-text {
+            font-size: 2em;
+            line-height: 1em;
+            margin-bottom: 1em;
+            margin-top: 0;
+            padding: 0;
         }
 
-        .main-content-small-text {
-            font-size: 30px;
-            font-weight: 400;
-            line-height: 34.5px;
-            margin-top: 60px;
+        .main-text-small {
+            font-size: 1.5em;
+            line-height: 1em;
+            margin-top: 0;
+            padding: 0;
         }
 
-        .get-in-touch {
-            position: absolute;
-            width: 336px;
-            height: 34px;
-            top: 993px;
-            left: 635px;
-        }
-
-        .mail-link {
-            font-size: 50px;
+        /* Get in Touch */
+        .get-in-touch a {
+            font-size: 1.5em;
             font-weight: 700;
-            line-height: 57.5px;
             text-decoration: underline;
         }
 
-        /* Mobile Styling */
-        @media (max-width: 768px) {
-            body {
-                position: relative;
-                width: 100%;
-                min-height: 50vh;
-                overflow-x: hidden;
-                margin: 0;
-                padding: 0;
-                background-image: url('{{ asset('images/background.png') }}');
-                background-size: cover;
-                background-position: center;
+        .get-in-touch {
+            text-align: center;
+        }
+
+        /* Responsive Layout */
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
             }
 
-
-            .gradient-overlay {
-                width: 100%;
-                height: 100vh;
+            .left-side {
+                width: 50%;
             }
 
-            .credits {
-                position: relative;
-                top: 20px;
-                left: 0;
-                width: 90%;
-                height: auto;
-                margin: 0 auto;
-                text-align: center;
+            .right-side {
+                width: 75%;
             }
 
-            .credits p {
-                font-size: 14px;
-                line-height: 1.4;
+            .left-side {
+                margin-right: 5%;
             }
 
-            .logo {
-                position: relative;
-                top: 40px;
-                left: 27%;
-                transform: translateX(-50%);
-                width: 60%;
-                max-width: 200px;
-                height: auto;
-                margin: 20px auto;
-            }
-
-            .logo img {
-                width: 100%;
-                height: auto;
-            }
-
-            .main-content {
-                position: relative;
-                top: 60px;
-                left: 0;
-                width: 90%;
-                height: auto;
-                margin: 0 auto;
+            .credits-title {
+                font-size: 1em;
                 text-align: left;
             }
 
-            .main-content p {
-                font-size: 16px;
-                line-height: 1.5;
+            .credits-content {
+                text-align: left;
             }
 
-            .main-content p:first-child {
-                margin-top: 20px;
+            .main-text {
+                font-size: 2em;
+                line-height: 1em;
+            }
+
+            .main-text-small {
+                font-size: 1.5em;
             }
 
             .get-in-touch {
-                position: relative;
-                width: 90%;
-                top: 80px;
-                left: 0;
-                margin: 20px auto;
-                text-align: center;
+                text-align: left;
             }
 
-            .mail-link {
-                font-size: 20px;
-                line-height: 1.2;
-                top: -5px;
+            .get-in-touch a {
+                font-size: 2em;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .main-text {
+                font-size: 3.5em;
+                line-height: 1.2em;
+            }
+
+            .main-text-small {
+                font-size: 1.75em;
+                line-height: 1.2em;
+            }
+
+            .get-in-touch a {
+                font-size: 3.5em;
+            }
+
+            .logo {
+                background: blue;
+            }
+
+            .logo img {
+                float: right;
             }
         }
     </style>
 </head>
 
 <body>
-
     <!-- Gradient Overlay -->
     <div class="gradient-overlay"></div>
 
-    <!-- Layer 5: Credits -->
-    <div class="credits">
-        <p class="credits-title">
-            SEEKING SYNTHS
-        </p>
-        <p class="credits-content">
-            Host: Jesse Beaman<br>
-            Director: Sam Mims<br>
-            Editor & Director of Photography: Lucas Fowler
-        </p>
-    </div>
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Left Side: Credits and Logo -->
+        <div class="left-side">
+            <!-- Credits -->
+            <div class="credits">
+                <p class="credits-title">SEEKING SYNTHS</p>
+                <p class="credits-content">
+                    Host: Jesse Beaman<br>
+                    Director: Sam Mims<br>
+                    Editor & Director of Photography: Lucas Fowler
+                </p>
+            </div>
 
-    <!-- Layer 1: Logo -->
-    <div class="logo">
-        <img src="{{ asset('images/logo.png') }}" alt="Seeking Synths Logo">
-    </div>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Seeking Synths Logo">
+            </div>
+        </div>
 
-    <!-- Layer 2: Main Content Text -->
-    <div class="main-content">
-        <p class="main-content-large-text">
-            <strong>Seeking Synths</strong> is a captivating video series featuring
-            30-minute episodes in the spirit of Anthony Bourdain, where the host visits renowned musicians to explore
-            their collections of vintage synthesizers and uncover how these iconic instruments have shaped their music.
-        </p>
-        <p class="main-content-small-text">
-            The show delves into the guests' passion for vintage synthesizers and the distinctive sounds they
-            create, revealing the stories behind the music, the musicians, and these rare instruments. Musicians
-            will marvel at the impressive collections, while non-musicians will enjoy uncovering the artists behind
-            some of their favorite tracks.
-        </p>
-    </div>
+        <!-- Right Side: Main Text and Get in Touch -->
+        <div class="right-side">
+            <!-- Main Text -->
+            <div class="main-content">
+                <p class="main-text">
+                    <strong>Seeking Synths</strong> is a captivating video series featuring 30-minute episodes in the
+                    spirit of Anthony
+                    Bourdain, where the host visits renowned musicians to explore their collections of vintage
+                    synthesizers
+                    and uncover how these iconic instruments have shaped their music.
+                </p>
+                <p class="main-text-small">
+                    The show delves into the guests' passion for vintage synthesizers and the distinctive sounds they
+                    create, revealing the stories behind the music, the musicians, and these rare instruments. Musicians
+                    will marvel at the impressive collections, while non-musicians will enjoy uncovering the artists
+                    behind
+                    some of their favorite tracks.
+                </p>
+            </div>
 
-    <!-- Layer 3: "Get in Touch!" Text -->
-    <div class="get-in-touch">
-        <a class="mail-link" href="mailto:contact@seekingsynths.com">
-            Get in touch!
-        </a>
+            <!-- Get in Touch -->
+            <div class="get-in-touch">
+                <a href="mailto:contact@seekingsynths.com">Get in touch!</a>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>

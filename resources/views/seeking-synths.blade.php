@@ -47,9 +47,9 @@
           },
           "director": {
             "@type": "Person",
-            "name": "Sam Mims"
+            "name": "Lucas Fowler"
           },
-          "image": "https://www.seekingsynths.com/path-to-image.jpg",
+          "image": "https://www.seekingsynths.com/images/logo.png",
           "url": "https://www.seekingsynths.com",
           "sameAs": [
             "https://www.facebook.com/seekingsynths",
@@ -228,10 +228,6 @@
 
             .get-in-touch a {
                 font-size: 3.5em;
-            }
-
-            .logo {
-                background: blue;
             }
 
             .logo img {
